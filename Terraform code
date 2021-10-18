@@ -1,1 +1,29 @@
+Given account and provider details:-
+
+provider "aws" {
+  access_key = "aaaaaaaaaaaaaa"
+  secret_key = "aaaaaaaaaaaa"
+  region     = "us-west-10"
+}
+
+
+
+Creating ec2 with tags
+
+resource "aws_instance" "myinstance" {
+  ami           = "ami-000000"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "mycode"
+  }
+}
+
+
+codes :-
+terraform init
+terraform fmt
+terraform plan
+terraform apply 
+
+
 
