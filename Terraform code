@@ -26,4 +26,8 @@ terraform plan
 terraform apply 
 
 
+example :-
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair ( example_code)
+
+
 
