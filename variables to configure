@@ -1,0 +1,27 @@
+Environment variables to configure
+windoews:
+setx AWS_ACCESS_KEY_ID
+setx AWS_SECRET_ACCESS_KEY 
+setx AWS_DEFAULT_REGION 
+
+Linux:
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export AWS_DEFAULT_REGION=
+
+
+
+example how to launch ec2
+##Add provider
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "3.72.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+}
